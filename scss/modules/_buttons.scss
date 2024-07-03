@@ -1,0 +1,54 @@
+.button {
+  color: $white;
+  padding: 10px 32px;
+  font-weight: $font-weight;
+  border-radius: 25px;
+  border: 2px solid #fff;
+  font-size: $font-size;
+  transition: all 0.3s ease;
+}
+
+.button-light:hover {
+  background-color: $white;
+  color: $midnight-green;
+}
+
+.button-light:active {
+  color: $white;
+  background-color: transparent;
+  opacity: 0.25;
+}
+
+.button-dark {
+  border-color: $state-green;
+  color: $state-green;
+}
+
+.button-dark:hover {
+  background-color: $state-green;
+  color: $white;
+}
+
+.button-dark:active {
+  opacity: 0.25;
+}
+
+.header__btn {
+  display: inline-block;
+  margin-left: auto;
+}
+
+.button-white {
+  background-color: #fff;
+  color: $dark-green;
+}
+
+.button-white:hover {
+  background-color: $rapture-blue;
+  border: 2px solid $rapture-blue;
+  cursor: pointer;
+}
+
+.button-white:active {
+  opacity: 0.25;
+}

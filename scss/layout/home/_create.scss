@@ -1,0 +1,233 @@
+/* Create */
+.create {
+  padding: 140px 0;
+  background-color: $state-green;
+
+  .create__container {
+    display: flex;
+  }
+}
+
+.create__title {
+  position: relative;
+  width: 445px;
+  padding-top: 54px;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.create__title::before {
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 4px;
+  background-color: $light-coral;
+  content: '';
+}
+
+.create__list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 22px;
+  margin-left: 197px;
+}
+
+.create__item {
+  position: relative;
+  margin-top: 32px;
+}
+
+.create__item::before {
+  position: absolute;
+  right: calc(100% + 23px);
+  width: 72px;
+  height: 72px;
+  background-image: url('../img/individual-icon.svg');
+  background-size: contain;
+  content: '';
+}
+
+.create__item-implement::before {
+  position: absolute;
+  right: calc(100% + 23px);
+  width: 72px;
+  height: 72px;
+  background-image: url('../img/implement.svg');
+  background-size: contain;
+  content: '';
+}
+
+.create__item-productivity::before {
+  position: absolute;
+  right: calc(100% + 23px);
+  width: 72px;
+  height: 72px;
+  background-image: url('../img/productivity.svg');
+  background-size: contain;
+  content: '';
+}
+
+.create__item-title {
+  font-weight: 700;
+  color: $light-coral;
+  margin-bottom: 16px;
+}
+
+.create__text {
+  width: 445px;
+}
+
+@media only screen and (max-width: 980px) {
+  .create {
+    background-position: right top;
+  }
+
+  .create__container {
+    max-width: 789px;
+    flex-direction: column;
+    align-items: center;
+
+    .create__list {
+      margin: 0;
+      margin-left: 180px;
+    }
+
+    .create__title {
+      font-size: 42px;
+      line-height: 42px;
+      margin-bottom: 64px;
+    }
+
+    .create__item-title {
+      font-size: 18px;
+    }
+
+    .create__text {
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .create__container {
+    .create__list {
+      margin: 0;
+      margin-left: 115px;
+    }
+
+    .create__title {
+      font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 64px;
+    }
+
+    .create__item-title {
+      font-size: 18px;
+    }
+
+    .create__text {
+      width: auto;
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .create {
+    padding-top: 100px;
+    background-position: right top;
+  }
+
+  .create__container {
+    // max-width: 789px;
+    flex-direction: column;
+    align-items: start;
+
+    .create__title {
+      width: 240px;
+      font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 64px;
+    }
+
+    .create__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 0;
+      .create__item {
+        position: relative;
+        margin-bottom: 48px;
+        &::before {
+          position: absolute;
+          bottom: 100%;
+          left: calc(50% - 10%);
+        }
+        .create__item-title {
+          font-size: 18px;
+          text-align: center;
+        }
+        .create__text {
+          width: 327px;
+          text-align: center;
+          font-size: 15px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .create {
+    padding-top: 100px;
+    background-position: right top;
+  }
+
+  .create__container {
+    // max-width: 789px;
+    flex-direction: column;
+    align-items: start;
+
+    .create__title {
+      width: 240px;
+      font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 64px;
+    }
+
+    .create__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 0;
+      .create__item {
+        position: relative;
+        margin-bottom: 48px;
+        &::before {
+          position: absolute;
+          bottom: 100%;
+          left: calc(50% - 10%);
+        }
+        .create__item-title {
+          font-size: 18px;
+          text-align: center;
+        }
+        .create__text {
+          width: 327px;
+          text-align: center;
+          font-size: 15px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}

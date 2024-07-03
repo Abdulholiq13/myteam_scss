@@ -1,0 +1,29 @@
+.about__intro {
+  padding: 124px 0 120px 0;
+
+  .about__intro-container {
+    display: flex;
+    align-items: top;
+    .about__intro-title {
+      font-size: 64px;
+      line-height: 100px;
+      margin-right: 190px;
+      font-weight: 700;
+    }
+  }
+}
+
+.about__intro-text {
+  position: relative;
+  padding-top: 40px;
+  font-weight: 600;
+  z-index: 1;
+  &::before {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: $light-coral;
+  }
+}

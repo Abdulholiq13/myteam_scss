@@ -1,0 +1,140 @@
+.contact {
+  padding: 120px 0 114px 0;
+}
+
+.contact__container {
+  display: flex;
+  align-items: center;
+}
+
+.contact__content {
+  padding-right: 190px;
+}
+
+.contact__title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 100px;
+  margin-bottom: 16px;
+}
+
+.contact__list-title {
+  color: $light-coral;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 54px;
+}
+
+.contact__list {
+  list-style-type: none;
+}
+.contact__item {
+  display: flex;
+  align-items: center;
+}
+.contact__text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 95px;
+  margin-bottom: 52px;
+  &::before {
+    position: absolute;
+    right: calc(100% + 23px);
+    width: 72px;
+    height: 72px;
+    background-image: url('../img/individual-icon.svg');
+    background-size: contain;
+    content: '';
+  }
+
+  &.implement::before {
+    position: absolute;
+    right: calc(100% + 23px);
+    width: 72px;
+    height: 72px;
+    background-image: url('../img/implement.svg');
+    background-size: contain;
+    content: '';
+  }
+
+  &.productivity::before {
+    position: absolute;
+    right: calc(100% + 23px);
+    width: 72px;
+    height: 72px;
+    background-image: url('../img/productivity.svg');
+    background-size: contain;
+    content: '';
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  .form__input {
+    width: 540px;
+    height: 42px;
+    margin-bottom: 8px;
+    text-indent: 14px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    transition: all 0.3s ease;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      font-size: 15px;
+      color: #fff;
+      opacity: 0.6;
+      text-transform: capitalize;
+    }
+
+    &:hover {
+      border-color: $rapture-blue;
+      cursor: pointer;
+    }
+  }
+  .form__message {
+    width: 540px;
+    height: 84px;
+    margin-bottom: 24px;
+    text-indent: 14px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    resize: none;
+    transition: all 0.3s ease;
+
+    &::placeholder {
+      color: #fff;
+      opacity: 0.6;
+      font-size: 15px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+      border-color: $rapture-blue;
+    }
+  }
+  .error {
+    font-size: 10px;
+    line-height: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+    color: #f67e7e;
+    opacity: 0;
+  }
+}

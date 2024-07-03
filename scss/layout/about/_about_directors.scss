@@ -1,0 +1,69 @@
+.directors {
+  padding: 140px 0;
+  background-color: $jungle-green;
+
+  .directors__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .directors__title {
+    font-size: 48px;
+    margin-bottom: 64px;
+    font-weight: 700;
+  }
+}
+
+.card__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.card__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  padding: 32px 0 56px 0;
+  background-color: $state-green;
+  &:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+
+  &:nth-child(-n + 3) {
+    margin-bottom: 76px;
+  }
+
+  & > img {
+    border-radius: 50%;
+    margin-bottom: 16px;
+  }
+  .card__title {
+    font-weight: 700;
+    color: $rapture-blue;
+  }
+
+  .card__position {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+}
+
+.plus {
+  position: absolute;
+  top: 89%;
+  width: 56px;
+  height: 56px;
+  background-color: $light-coral;
+  border-radius: 50%;
+  border: none;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: $rapture-blue;
+    cursor: pointer;
+  }
+}

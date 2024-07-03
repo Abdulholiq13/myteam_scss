@@ -1,0 +1,39 @@
+/* Start */
+.start {
+  padding: 76px 0;
+  background-color: $light-coral;
+  background-repeat: no-repeat;
+  background-position: left calc(50% - 620px) bottom;
+  .start__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .start__title {
+    font-size: 48px;
+    line-height: 48px;
+    color: $state-green;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .start__container {
+    flex-direction: column;
+
+    .start__title {
+      display: inline-block;
+      font-size: 40px;
+      margin-bottom: 24px;
+      line-height: 32px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .start__container {
+    .start__title {
+      font-size: 32px;
+      text-align: center;
+    }
+  }
+}

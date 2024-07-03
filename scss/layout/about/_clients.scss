@@ -1,0 +1,26 @@
+.clients {
+  padding: 140px 0;
+  background-color: #012f34;
+
+  .client__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .clients__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 70px;
+  }
+
+  .clients__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+  }
+}
